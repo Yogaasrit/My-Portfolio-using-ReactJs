@@ -4,16 +4,27 @@ import './NavBar.css';
 import {FaBars,FaTimes} from 'react-icons/fa';
 
 const NavBar = () => {
-  // Handler to handle the hamburger when clicked.
+  // State for hamburger when clicked.
 const [click,setClick] = useState(false);
+  // State to change color
+const [color,setColor] = useState(false);
 
-
-
+// Handler to handle the hamburger when clicked.
 const onClickHandle = () => 
   setClick(!click);
 
+// Handler to change color
+const changeColorHandler = () => {
+  if(window.scrollY >= 100){
+    setColor(true);
+  }else{
+    setColor(false);
+  }
+}
+window.addEventListener("scroll",changeColorHandler);
+
   return (
-    <div className='header'>
+    <div className= {color ? 'header header-bg' : 'header'}>
       <Link to = "/">
         <h1>Portfolio</h1>
       </Link>

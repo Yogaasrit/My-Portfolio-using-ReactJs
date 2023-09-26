@@ -1,14 +1,16 @@
-import React from 'react';
-import NavBar from '../../components/NavBar/NavBar';
-import User from '../../components/User/User';
- 
+import React from "react";
+import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/NavBar/NavBar";
+import User from "../../components/UserScreen/User";
+
 const HomePage = () => {
   return (
     <div>
-      <NavBar/>
-      <User/>
+      <NavBar />
+      <User />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default HomePage;

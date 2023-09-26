@@ -1,6 +1,6 @@
 import React from 'react';
 import './User.css';
-import HomePageImage from "../../asserts/HomePage.jpg";
+import HomePageImage from "../../assets/Image1.jpeg";
 import { Link } from 'react-router-dom';
 const User = () => {
   return (
