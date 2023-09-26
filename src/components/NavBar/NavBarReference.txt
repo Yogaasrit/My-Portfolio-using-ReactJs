@@ -1,0 +1,28 @@
+Cases :
+-------
+1. NavBar should contain - Home,Project,About,Contact.
+2. NavBar should contain a logo(potfolio logo).
+3. NavBar should be common and rendered in all pages.
+4. When logo is clicked from any page, it should render homePage.
+5. When the screen size is reduced, the pages should be in hamburger.
+6. While clicking the hamburger, the pageslist should be rendered in center.
+7. And the close icon should be placed in the place of hamburger icon.
+8. When close button is clicked, the listed pages should be hidden.
+9. And hamburger icon should appear.
+10. Set Routing to all pages.
+
+Implementation:
+---------------
+1. Done using li tag.
+2. Done using Link.
+3. Rendered in all pages.
+4. Linked with '/' home page.
+5. @media screen and (max-width : 1040px)
+   When the size is below 1040px the hamburger and the necessary styling are done inside 
+   this block.
+   hamburger is imported in js file.
+6. Using css the active menu is set and displayed in center.
+7. Using state and handler it is toggled.
+8. Using -100% in css it is hidden.
+9. Using state it is changed.
+10.Using Link to the routing is complete.
